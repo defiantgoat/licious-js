@@ -1,0 +1,64 @@
+:host {
+  display: none;
+  z-index: 1000;
+  background-color: rgba(81,81,81,.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+:host(.open) {
+  display: flex;
+}
+
+div.panel {
+  background-color: var(--licious-secondary-background);
+  width: calc(100vw/1.5);
+  height: calc(100vh/2);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.21);
+  border-radius: 0.5rem;
+}
+div.panel.sm {
+  width: calc(100vw/3);
+  height: calc(100vh/3);
+  max-width: 18.75rem;
+  max-height: 18rem;
+}
+div.panel.md {
+  width: calc(100vw/2);
+  height: calc(100vh/2);
+}
+div.panel.lg {
+  width: calc(100vw/1.5);
+  height: calc(100vh/1.5);
+}
+
+div.panel .header {
+  height: 3.75rem;
+  background-color: var(--licious-toolbar-background);
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem 0 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+
+}
+div.panel .header h1 {
+  flex:1;
+  font-family: "rig-shaded-bold-face", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 0.3rem;
+  color: var(--licious-primary);
+}
+
+div.panel .content {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 1rem;
+}

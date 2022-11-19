@@ -1,0 +1,62 @@
+:host {
+  display: flex;
+}
+
+button {
+  background-color: var(--licious-accent);
+  border: none;
+  color: var(--licious-secondary);
+  cursor: pointer;
+  height: 3.25rem;
+  width: 3.25rem;
+  border-radius: calc(3.25rem/2);
+  align-items: center;
+  justify-content: center;
+}
+
+button.sm {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: calc(2.75rem/2);
+}
+
+button.xs {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: calc(2.25rem/2);
+}
+
+button div:first-child > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--licious-primary)
+}
+
+button.sm div:first-child > svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--licious-primary)
+}
+
+button.xs div:first-child > svg {
+  width: .8rem;
+  height: .8rem;
+  color: var(--licious-primary)
+}
+
+button:hover {
+  background-color: var(--licious-primary);
+}
+
+button:hover div:first-child > svg{
+  color: var(--licious-accent)
+}
+
+button:disabled, button.sm:disabled {
+  background-color: var(--licious-disabled-background);
+  cursor: default;
+}
+
+button:disabled div:first-child > svg {
+  color: var(--licious-disabled-foreground)
+}

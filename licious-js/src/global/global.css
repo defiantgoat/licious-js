@@ -1,0 +1,47 @@
+:root {
+  --light-gray: #515151;
+  --licious-primary: #FFD700;
+  --licious-secondary: #FFF4B6;
+  --licious-accent: #B60965;
+  --licious-toolbar-background: #000000;
+  --licious-secondary-background: #222222;
+  --licious-disabled-background: #2C2C2C;
+  --licious-disabled-foreground: #444;
+  --licious-default-background: #120F00;
+  --licious-default-foreground: var(--licious-secondary);
+  --licious-pressed-background: #120F00;
+  --licious-pressed-foreground: var(--licious-primary);
+  --licious-bar-button-default-background: var(--licious-accent);
+  --licious-bar-button-default-foreground: var(--licious-primary);
+  --licious-bar-button-pressed-background: var(--licious-primary);
+  --licious-bar-button-pressed-foreground: var(--licious-accent);
+  --licious-bar-button-disabled-background: var(--licious-disabled-background);
+  --licious-bar-button-disabled-foreground: var(--licious-default-foreground);
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+licious-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+licious-icon > div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+licious-icon > div > svg {
+  color: var(--licious-primary);
+  width: 100%;
+  height: 100%;
+}
+
+licious-panel h1 {
+  font-family: "rig-shaded-bold-face", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--licious-primary);
+
+}
