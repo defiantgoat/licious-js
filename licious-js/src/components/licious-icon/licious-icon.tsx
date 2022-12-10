@@ -6,6 +6,7 @@ import { Component, Host, Prop, h } from '@stencil/core';
   shadow: false,
 })
 
+
 export class LiciousIcon {
 
   getIcon(icon: string) {
@@ -27,9 +28,9 @@ export class LiciousIcon {
         </svg>
       ),
       menu: (
-        <svg part='icon' viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="currentColor" />
-        </svg>
+        <svg part='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 20"><polygon fill="currentColor" points="1.68 12 5 12 27 12 30.32 12 32 10.02 32 10.02 32 10.02 30.3 8 27 8 5 8 1.7 8 0 10.02 0 10.02 0 10.02 1.68 12" /><polygon fill="currentColor" points="5 4 27 4 30.32 4 32 2.02 32 2.02 30.3 0 27 0 5 0 1.7 0 0 2.02 0 2.02 1.68 4 5 4" /><polygon fill="currentColor" points="30.3 16 27 16 5 16 1.7 16 0 18.02 0 18.02 0 18.02 1.68 20 5 20 27 20 30.32 20 32 18.02 32 18.02 32 18.02 30.3 16" /></svg> // <svg part='icon' viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        //   <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="currentColor" />
+        // </svg>
       ),
       trash: (
         <svg part='icon' viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,12 +41,7 @@ export class LiciousIcon {
         </svg>
       ),
       save: (
-        <svg part='icon' viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M15.1111 8.5V15.1111H1.8889V8.5H9.53674e-06V15.1111C9.53674e-06 16.15 0.85001 17 1.8889 17H15.1111C16.15 17 17 16.15 17 15.1111V8.5H15.1111ZM9.44445 9.13278L11.8906 6.69611L13.2222 8.02778L8.50001 12.75L3.77779 8.02778L5.10945 6.69611L7.55556 9.13278V0H9.44445V9.13278Z"
-            fill="currentColor"
-          />
-        </svg>
+        <svg part='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34"><polygon fill="currentColor" points="30 18 30 30 4 30 4 18 0 14 0 34 34 34 34 14 30 18" /><polygon fill="currentColor" points="24 10.94 19 15.44 19 0 15 0 15 15.44 10 10.94 10 16.4 15 20.99 15 20.99 17 23 19 20.99 19 20.99 24 16.4 24 10.94" /></svg>
       ),
       edit: (
         <svg part='icon' viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,20 +52,22 @@ export class LiciousIcon {
         </svg>
       ),
       close: (
-        <svg part='icon' viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M16.6229 0.390027C16.12 -0.112817 15.3077 -0.112817 14.8049 0.390027L8.5 6.68203L2.19511 0.377133C1.69226 -0.125711 0.879977 -0.125711 0.377133 0.377133C-0.125711 0.879977 -0.125711 1.69226 0.377133 2.19511L6.68203 8.5L0.377133 14.8049C-0.125711 15.3077 -0.125711 16.12 0.377133 16.6229C0.879977 17.1257 1.69226 17.1257 2.19511 16.6229L8.5 10.318L14.8049 16.6229C15.3077 17.1257 16.12 17.1257 16.6229 16.6229C17.1257 16.12 17.1257 15.3077 16.6229 14.8049L10.318 8.5L16.6229 2.19511C17.1128 1.70516 17.1128 0.879978 16.6229 0.390027Z"
-            fill="currentColor"
-          />
-        </svg>
+        <svg part='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><polygon fill="currentColor" points="32 0 29.34 0 16 13.34 2.66 0 0 0 0 2.66 13.34 16 0 29.34 0 32 2.66 32 16 18.66 29.34 32 32 32 32 29.34 18.66 16 32 2.66 32 0" /></svg>
+        // <svg part='icon' viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        //   <path
+        //     d="M16.6229 0.390027C16.12 -0.112817 15.3077 -0.112817 14.8049 0.390027L8.5 6.68203L2.19511 0.377133C1.69226 -0.125711 0.879977 -0.125711 0.377133 0.377133C-0.125711 0.879977 -0.125711 1.69226 0.377133 2.19511L6.68203 8.5L0.377133 14.8049C-0.125711 15.3077 -0.125711 16.12 0.377133 16.6229C0.879977 17.1257 1.69226 17.1257 2.19511 16.6229L8.5 10.318L14.8049 16.6229C15.3077 17.1257 16.12 17.1257 16.6229 16.6229C17.1257 16.12 17.1257 15.3077 16.6229 14.8049L10.318 8.5L16.6229 2.19511C17.1128 1.70516 17.1128 0.879978 16.6229 0.390027Z"
+        //     fill="currentColor"
+        //   />
+        // </svg>
       ),
       logout: (
-        <svg part='icon' viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M12.75 3.4L11.5515 4.5985L13.7445 6.8H5.1V8.5H13.7445L11.5515 10.693L12.75 11.9L17 7.65L12.75 3.4ZM1.7 1.7H8.5V0H1.7C0.765 0 0 0.765 0 1.7V13.6C0 14.535 0.765 15.3 1.7 15.3H8.5V13.6H1.7V1.7Z"
-            fill="currentColor"
-          />
-        </svg>
+        <svg part='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34"><polygon fill="currentColor" points="16 30 4 30 4 4 16 4 20 0 0 0 0 34 20 34 16 30" /><polygon fill="currentColor" points="21.94 10 26.44 15 11 15 11 19 26.44 19 21.94 24 27.4 24 31.99 19 31.99 19 34 17 31.99 15 31.99 15 27.4 10 21.94 10" /></svg>
+        // <svg part='icon' viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        //   <path
+        //     d="M12.75 3.4L11.5515 4.5985L13.7445 6.8H5.1V8.5H13.7445L11.5515 10.693L12.75 11.9L17 7.65L12.75 3.4ZM1.7 1.7H8.5V0H1.7C0.765 0 0 0.765 0 1.7V13.6C0 14.535 0.765 15.3 1.7 15.3H8.5V13.6H1.7V1.7Z"
+        //     fill="currentColor"
+        //   />
+        // </svg>
       ),
     }
 
