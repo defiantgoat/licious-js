@@ -7,7 +7,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 })
 export class LiciousSelect {
 
-  @Prop() options: { value: string | number, label: string }[]
+  @Prop() options: { value: string | number, label: string }[] = []
   @Prop() disabled: boolean;
 
   render() {
