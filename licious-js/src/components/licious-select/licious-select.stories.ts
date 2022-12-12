@@ -1,5 +1,3 @@
-import { within } from '@storybook/testing-library';
-
 export default {
   title: 'Licioius/LiciousSelect',
   argTypes: {
@@ -7,21 +5,24 @@ export default {
       control: { type: 'text' },
     },
     options: {
-      control: { type: 'array'},
+      control: { type: 'array' },
     }
   },
+  decorators: [(story) => `<div style="width:300px">${story()}</div>`],
 };
 
-const Template = (args) => {
-  console.log(args);
-  return `<div style="width:${args.width}"><licious-select data-testid="licious-select" disabled="${args.disabled}"></licious-select></div>`;
+const Template = (args: { width: string, disabled: boolean, options: any[] }) => {
+  setTimeout(() => {
+    const [element] = [...document.getElementsByTagName('licious-select')];
+    element.options = args.options || [];
+  });
+  return `<licious-select disabled="${args.disabled}"></licious-select>`;
 }
 
 export const Example = Template.bind({});
 Example.args = {
-  width: '300px',
   disabled: false,
-  options: [{ 
+  options: [{
     value: 1,
     label: "One"
   },
@@ -29,24 +30,5 @@ Example.args = {
     value: 2,
     label: "Two"
   }
-]
-};
-
-Example.play = async ({ canvasElement, userEvent }) => {
-  console.log("select: ", canvasElement, userEvent)
-  const canvas= within(canvasElement);
-
-  const [select] = canvas.getAllByTestId('licious-select');
-
-    // @ts-ignore
-    select.options = [{
-      value: 1,
-      label: "One"
-    },
-    {
-      value: 2,
-      label: "Two"
-    }
-  ];
-
+  ]
 };

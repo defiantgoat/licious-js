@@ -1,8 +1,10 @@
 export default {
   title: 'Licioius/LiciousMenuButton',
+  decorators: [(story) => `<div style="height:4rem;background-color:black">${story()}</div>`],
+
 };
 
-const Template = (args) => `<div style="height:65px;background-color:black"><licious-menu-button disabled="${args.disabled}"></licious-menu-button><div>`;
+const Template = (args: {disabled: boolean}) => `<licious-menu-button disabled="${args.disabled}"></licious-menu-button>`;
 
 export const Example = Template.bind({});
 Example.args = {

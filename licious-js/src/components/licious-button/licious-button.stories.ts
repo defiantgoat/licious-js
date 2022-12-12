@@ -11,6 +11,7 @@ export default {
       control: { type: 'select' }, // Automatically inferred when 'options' is defined
     },
   },
+  decorators: [(story) => `<div style="display:flex;justify-content:center;align-items:center">${story()}</div>`],
 };
 
 const Template = (args) => `<div style="width:${args.width}"><licious-button icon="${args.icon}" size="${args.size}" label="${args.label}" disabled="${args.disabled}"></licious-button></div>`;
