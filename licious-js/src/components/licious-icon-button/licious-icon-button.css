@@ -64,4 +64,3 @@ button:hover div:first-child > svg {
 button:active div:first-child > svg {
   color: var(--licious-default-background);
 }
-

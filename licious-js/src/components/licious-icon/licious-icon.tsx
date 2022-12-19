@@ -6,7 +6,6 @@ import { Component, Host, Prop, h } from '@stencil/core';
   shadow: false,
 })
 
-
 export class LiciousIcon {
 
   getIcon(icon: string) {
@@ -49,5 +48,4 @@ export class LiciousIcon {
       </Host>
     );
   }
-
 }

@@ -41,24 +41,14 @@ export namespace Components {
         "icon": "paint" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
         "size": "xs" | "sm" | "lg";
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
-    }
 }
 export interface LiciousInputCustomEvent<T> extends CustomEvent<T> {
     detail: T;
     target: HTMLLiciousInputElement;
+}
+export interface LiciousPanelCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLLiciousPanelElement;
 }
 declare global {
     interface HTMLLiciousButtonElement extends Components.LiciousButton, HTMLStencilElement {
@@ -109,12 +99,6 @@ declare global {
         prototype: HTMLLiciousToolbarButtonElement;
         new (): HTMLLiciousToolbarButtonElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLElementTagNameMap {
         "licious-button": HTMLLiciousButtonElement;
         "licious-icon": HTMLLiciousIconElement;
@@ -124,7 +108,6 @@ declare global {
         "licious-panel": HTMLLiciousPanelElement;
         "licious-select": HTMLLiciousSelectElement;
         "licious-toolbar-button": HTMLLiciousToolbarButtonElement;
-        "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
@@ -152,6 +135,7 @@ declare namespace LocalJSX {
     }
     interface LiciousPanel {
         "header"?: string;
+        "onPanelClosed"?: (event: LiciousPanelCustomEvent<boolean>) => void;
         "open"?: boolean;
         "size"?: "sm" | "md" | "lg";
     }
@@ -164,20 +148,6 @@ declare namespace LocalJSX {
         "icon"?: "paint" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
         "size"?: "xs" | "sm" | "lg";
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface IntrinsicElements {
         "licious-button": LiciousButton;
         "licious-icon": LiciousIcon;
@@ -187,7 +157,6 @@ declare namespace LocalJSX {
         "licious-panel": LiciousPanel;
         "licious-select": LiciousSelect;
         "licious-toolbar-button": LiciousToolbarButton;
-        "my-component": MyComponent;
     }
 }
 export { LocalJSX as JSX };
@@ -202,7 +171,6 @@ declare module "@stencil/core" {
             "licious-panel": LocalJSX.LiciousPanel & JSXBase.HTMLAttributes<HTMLLiciousPanelElement>;
             "licious-select": LocalJSX.LiciousSelect & JSXBase.HTMLAttributes<HTMLLiciousSelectElement>;
             "licious-toolbar-button": LocalJSX.LiciousToolbarButton & JSXBase.HTMLAttributes<HTMLLiciousToolbarButtonElement>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }

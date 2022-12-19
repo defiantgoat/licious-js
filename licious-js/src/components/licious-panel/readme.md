@@ -14,6 +14,13 @@
 | `size`   | `size`    |             | `"lg" \| "md" \| "sm"` | `"lg"`     |
 
 
+## Events
+
+| Event         | Description | Type                   |
+| ------------- | ----------- | ---------------------- |
+| `panelClosed` |             | `CustomEvent<boolean>` |
+
+
 ## Shadow Parts
 
 | Part            | Description |

@@ -13,26 +13,9 @@ export class LiciousButton {
   @Prop() label: string;
   @Prop() disabled: boolean;
 
-  // @Event() liciousClick: EventEmitter<boolean>;
-
-  // liciousClickHandler(ev) {
-  //   console.log("clickedHandler", ev)
-  //   const event = this.liciousClick.emit(true);
-  //   if (!event.defaultPrevented) {
-  //     // if not prevented, do some default handling code
-  //   }
-  // }
-
   connectedCallback() {
     console.log('licious button initiated')
   }
-
-  // @Listen('click')
-  // handleClick(ev) {
-  //   if (!this.disabled) {
-  //     console.log('button clicked', ev);
-  //   }
-  // }
 
   render() {
     return (
@@ -50,5 +33,3 @@ export class LiciousButton {
     );
   }
 }
-
-

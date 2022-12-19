@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'licious-panel',
@@ -12,8 +12,16 @@ export class LiciousPanel {
   @Prop() header: string = "Header";
   @Prop() size: "sm" | "md" | "lg" = "lg";
 
+  @Event() panelClosed: EventEmitter<boolean>;
+
+  panelClosedHandler(evt: boolean) {
+    console.log('panelclosedd')
+    this.panelClosed.emit(evt);
+  }
+
   handleClose() {
       this.open = false;
+      this.panelClosedHandler(true);
   }
 
   render() {

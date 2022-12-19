@@ -3,6 +3,9 @@ import { Config } from '@stencil/core';
 export const config: Config = {
   namespace: 'licious-js',
   globalStyle: 'src/global/global.css',
+  extras: {
+    experimentalImportInjection: true,
+  },
   outputTargets: [
     {
       type: 'dist',
