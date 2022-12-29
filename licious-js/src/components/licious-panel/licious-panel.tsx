@@ -8,14 +8,13 @@ import { Component, Host, h, Prop, Event, EventEmitter } from '@stencil/core';
 
 export class LiciousPanel {
 
-  @Prop() open: boolean = false;
+  @Prop({ mutable: true }) open: boolean = false;
   @Prop() header: string = "Header";
   @Prop() size: "sm" | "md" | "lg" = "lg";
 
   @Event() panelClosed: EventEmitter<boolean>;
 
   panelClosedHandler(evt: boolean) {
-    console.log('panelclosedd')
     this.panelClosed.emit(evt);
   }
 

@@ -10,6 +10,7 @@ export class LiciousMenuButton {
   @State() opened: boolean = false;
 
   @Listen('click', { capture: true })
+  
   handleClick() {
     if(!this.disabled) {
       this.opened = !this.opened;

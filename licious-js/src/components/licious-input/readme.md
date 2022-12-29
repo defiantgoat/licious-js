@@ -11,14 +11,6 @@
 | ------------- | ------------- | ----------- | --------- | ----------- |
 | `disabled`    | `disabled`    |             | `boolean` | `undefined` |
 | `placeholder` | `placeholder` |             | `string`  | `undefined` |
-| `value`       | `value`       |             | `string`  | `undefined` |
-
-
-## Events
-
-| Event     | Description | Type                  |
-| --------- | ----------- | --------------------- |
-| `changed` |             | `CustomEvent<string>` |
 
 
 ----------------------------------------------

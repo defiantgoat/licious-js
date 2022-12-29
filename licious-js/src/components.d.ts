@@ -22,7 +22,6 @@ export namespace Components {
     interface LiciousInput {
         "disabled": boolean;
         "placeholder": string;
-        "value": string;
     }
     interface LiciousMenuButton {
         "disabled": boolean;
@@ -41,10 +40,6 @@ export namespace Components {
         "icon": "paint" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
         "size": "xs" | "sm" | "lg";
     }
-}
-export interface LiciousInputCustomEvent<T> extends CustomEvent<T> {
-    detail: T;
-    target: HTMLLiciousInputElement;
 }
 export interface LiciousPanelCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -126,9 +121,7 @@ declare namespace LocalJSX {
     }
     interface LiciousInput {
         "disabled"?: boolean;
-        "onChanged"?: (event: LiciousInputCustomEvent<string>) => void;
         "placeholder"?: string;
-        "value"?: string;
     }
     interface LiciousMenuButton {
         "disabled"?: boolean;

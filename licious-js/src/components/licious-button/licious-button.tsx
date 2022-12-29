@@ -13,10 +13,6 @@ export class LiciousButton {
   @Prop() label: string;
   @Prop() disabled: boolean;
 
-  connectedCallback() {
-    console.log('licious button initiated')
-  }
-
   render() {
     return (
       <Host>

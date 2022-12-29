@@ -132,8 +132,12 @@
   
       const inputs = document.querySelectorAll("licious-input");
       console.log(inputs)
-      inputs.forEach((input) => input.addEventListener("changed", (event) => console.log(event.target.value)));
-  
+      // inputs.forEach((input) => input.addEventListener("changed", (event) => console.log(event.target.value)));
+      inputs.forEach((input) => input.addEventListener("input", (event) => {
+        const [input] = event.composedPath();
+        console.log(input.value)
+      }));
+
       const select = document.getElementById("optionSelect");
       select.options = [{
         value: 1,
@@ -144,6 +148,13 @@
         label: "Two"
       }
       ];
+
+      // select.addEventListener('valueChanged', (ev) => console.log(ev.detail))
+      select.addEventListener("input", (ev) => {
+        console.log(ev.composedPath()[0].value)
+      })
+
+    document.getElementById("largePanel")?.addEventListener('panelClosed', event => {console.log(event) })
     </script>
   </body>
 </html>
