@@ -1,19 +1,13 @@
-import React, {useCallback} from "react";
-import "@licious/web-components";
-import '@licious/web-components/dist/licious-js/licious-js.css'
-
-// declare global {
-//   export namespace JSX {
-//       interface IntrinsicElements {
-//           "licious-button": any;
-//       }
-//   }
-// }
+import React from "react";
+import "licious-js-lit/components/licious-button/licious-button"
 
 const LiciousButton = () => {
   return (
-    <licious-button></licious-button>
+    <licious-button icon="paint" label="cat" disabled={false} size="sm"></licious-button>
   )
-}
+};
+
+export default LiciousButton;
+
 
 

@@ -1,0 +1,22 @@
+{
+  "name": "@licious/lit-web-components",
+  "version": "0.0.10",
+  "description": "Licious Web Components with Lit",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist/"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
