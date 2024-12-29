@@ -1,13 +1,13 @@
 {
   "name": "@licious/react",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "Licious Web Component React Wrapper",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run tsc",
+    "build": "rm -rf ./dist && npm run tsc",
     "tsc": "tsc -p . --outDir ./dist",
     "publish": "npm publish --access public"
   },
@@ -19,7 +19,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@licious/web-components": "^0.0.12",
+    "@licious/web-components": "^0.0.14",
     "@stencil/react-output-target": "^0.8.1"
   },
   "files": [

@@ -65,4 +65,3 @@ export const LiciousToolbarButton = createComponent({
     events: {},
     defineCustomElement: defineLiciousToolbarButton,
 });
-//# sourceMappingURL=components.js.map

@@ -12,7 +12,7 @@
 | `disabled` | `disabled` |             | `boolean`                                                                              | `undefined` |
 | `icon`     | `icon`     |             | `"close" \| "edit" \| "logout" \| "menu" \| "paint" \| "rubbish" \| "save" \| "trash"` | `undefined` |
 | `label`    | `label`    |             | `string`                                                                               | `undefined` |
-| `size`     | `size`     |             | `"lg" \| "sm"`                                                                         | `undefined` |
+| `size`     | `size`     |             | `"lg" \| "sm"`                                                                         | `'lg'`      |
 
 
 ## Shadow Parts

@@ -3,8 +3,8 @@
 }
 
 span {
-  height: 4rem;
-  width: 4rem;
+  flex: 1;
+  padding: .5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,16 +17,16 @@ button {
   border: none;
   color: var(--licious-secondary);
   cursor: pointer;
-  height: 3.25rem;
-  width: 3.25rem;
-  border-radius: calc(3.25rem/2);
+  height: 3rem;
+  width: 3rem;
+  border-radius: calc(3rem/2);
   align-items: center;
   justify-content: center;
 }
 
 button div:first-child > svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   color: var(--licious-primary)
 }
 
