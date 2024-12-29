@@ -1,0 +1,28 @@
+import type { EventName, StencilReactComponent } from "@stencil/react-output-target/runtime";
+import { LiciousButton as LiciousButtonElement } from "@licious/web-components/dist/components/licious-button";
+import { LiciousIconButton as LiciousIconButtonElement } from "@licious/web-components/dist/components/licious-icon-button.js";
+import { LiciousIcon as LiciousIconElement } from "@licious/web-components/dist/components/licious-icon.js";
+import { LiciousInput as LiciousInputElement } from "@licious/web-components/dist/components/licious-input.js";
+import { LiciousMenuButton as LiciousMenuButtonElement } from "@licious/web-components/dist/components/licious-menu-button.js";
+import { LiciousPanel as LiciousPanelElement } from "@licious/web-components/dist/components/licious-panel.js";
+import { LiciousSelect as LiciousSelectElement } from "@licious/web-components/dist/components/licious-select.js";
+import { LiciousToolbarButton as LiciousToolbarButtonElement } from "@licious/web-components/dist/components/licious-toolbar-button.js";
+type LiciousButtonEvents = NonNullable<unknown>;
+export declare const LiciousButton: StencilReactComponent<LiciousButtonElement, LiciousButtonEvents>;
+type LiciousIconEvents = NonNullable<unknown>;
+export declare const LiciousIcon: StencilReactComponent<LiciousIconElement, LiciousIconEvents>;
+type LiciousIconButtonEvents = NonNullable<unknown>;
+export declare const LiciousIconButton: StencilReactComponent<LiciousIconButtonElement, LiciousIconButtonEvents>;
+type LiciousInputEvents = {
+    onChanged: EventName<CustomEvent<string>>;
+};
+export declare const LiciousInput: StencilReactComponent<LiciousInputElement, LiciousInputEvents>;
+type LiciousMenuButtonEvents = NonNullable<unknown>;
+export declare const LiciousMenuButton: StencilReactComponent<LiciousMenuButtonElement, LiciousMenuButtonEvents>;
+type LiciousPanelEvents = NonNullable<unknown>;
+export declare const LiciousPanel: StencilReactComponent<LiciousPanelElement, LiciousPanelEvents>;
+type LiciousSelectEvents = NonNullable<unknown>;
+export declare const LiciousSelect: StencilReactComponent<LiciousSelectElement, LiciousSelectEvents>;
+type LiciousToolbarButtonEvents = NonNullable<unknown>;
+export declare const LiciousToolbarButton: StencilReactComponent<LiciousToolbarButtonElement, LiciousToolbarButtonEvents>;
+export {};

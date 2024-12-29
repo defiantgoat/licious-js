@@ -76,7 +76,18 @@ declare global {
         prototype: HTMLLiciousMenuButtonElement;
         new (): HTMLLiciousMenuButtonElement;
     };
+    interface HTMLLiciousPanelElementEventMap {
+        "panelClosed": boolean;
+    }
     interface HTMLLiciousPanelElement extends Components.LiciousPanel, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLLiciousPanelElementEventMap>(type: K, listener: (this: HTMLLiciousPanelElement, ev: LiciousPanelCustomEvent<HTMLLiciousPanelElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLLiciousPanelElementEventMap>(type: K, listener: (this: HTMLLiciousPanelElement, ev: LiciousPanelCustomEvent<HTMLLiciousPanelElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLLiciousPanelElement: {
         prototype: HTMLLiciousPanelElement;
