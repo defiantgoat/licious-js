@@ -10,6 +10,7 @@
 | Property   | Attribute  | Description | Type      | Default     |
 | ---------- | ---------- | ----------- | --------- | ----------- |
 | `disabled` | `disabled` |             | `boolean` | `undefined` |
+| `opened`   | `opened`   |             | `boolean` | `undefined` |
 
 
 ## Dependencies
