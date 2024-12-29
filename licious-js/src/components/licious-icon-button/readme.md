@@ -11,6 +11,7 @@
 | ---------- | ---------- | ----------- | -------------------------------------------------------------------------------------- | ----------- |
 | `disabled` | `disabled` |             | `boolean`                                                                              | `undefined` |
 | `icon`     | `icon`     |             | `"close" \| "edit" \| "logout" \| "menu" \| "paint" \| "rubbish" \| "save" \| "trash"` | `undefined` |
+| `size`     | `size`     |             | `"lg" \| "sm"`                                                                         | `'lg'`      |
 
 
 ## Shadow Parts

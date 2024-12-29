@@ -18,6 +18,13 @@ button {
   cursor: pointer;
 }
 
+button.sm {
+  max-height: 2.25rem;
+  max-width: 2.25rem;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+}
+
 button:hover {
   background-color: var(--licious-pressed-background);
   border-color: var(--licious-pressed-foreground);
@@ -48,7 +55,12 @@ button div:first-child {
 button div:first-child > svg {
   width: 1.2rem;
   height: 1.2rem;
-  color: var(--licious-secondary);
+  color: var(--licious-primary);
+}
+
+button.sm div:first-child > svg {
+  width: .9rem;
+  height: .9rem;
 }
 
 button:disabled div:first-child > svg,

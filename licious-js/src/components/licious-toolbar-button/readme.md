@@ -11,7 +11,7 @@
 | ---------- | ---------- | ----------- | ---------------------------------------------------------------------------- | ----------- |
 | `disabled` | `disabled` |             | `boolean`                                                                    | `undefined` |
 | `icon`     | `icon`     |             | `"close" \| "edit" \| "logout" \| "paint" \| "rubbish" \| "save" \| "trash"` | `undefined` |
-| `size`     | `size`     |             | `"lg" \| "sm" \| "xs"`                                                       | `undefined` |
+| `size`     | `size`     |             | `"lg" \| "md" \| "sm" \| "xs"`                                               | `'md'`      |
 
 
 ## Dependencies

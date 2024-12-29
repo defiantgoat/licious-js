@@ -44,7 +44,7 @@ button.icon > div:first-child div {
 
 button.icon > div:first-child svg {
   width: 1rem;
-  color: var(--licious-secondary);
+  color: var(--licious-primary);
 }
 
 button.icon > div:first-child {

@@ -8,16 +8,17 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface LiciousButton {
         "disabled": boolean;
-        "icon": "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
+        "icon": 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
         "label": string;
-        "size": "sm" | "lg";
+        "size": 'sm' | 'lg';
     }
     interface LiciousIcon {
         "icon": "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
     }
     interface LiciousIconButton {
         "disabled": boolean;
-        "icon": "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
+        "icon": 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "size": 'sm' | 'lg';
     }
     interface LiciousInput {
         "disabled": boolean;
@@ -38,8 +39,8 @@ export namespace Components {
     }
     interface LiciousToolbarButton {
         "disabled": boolean;
-        "icon": "paint" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
-        "size": "xs" | "sm" | "lg";
+        "icon": 'paint' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "size": 'xs' | 'sm' | 'md' | 'lg';
     }
 }
 export interface LiciousPanelCustomEvent<T> extends CustomEvent<T> {
@@ -120,16 +121,17 @@ declare global {
 declare namespace LocalJSX {
     interface LiciousButton {
         "disabled"?: boolean;
-        "icon"?: "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
+        "icon"?: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
         "label"?: string;
-        "size"?: "sm" | "lg";
+        "size"?: 'sm' | 'lg';
     }
     interface LiciousIcon {
         "icon"?: "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
     }
     interface LiciousIconButton {
         "disabled"?: boolean;
-        "icon"?: "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
+        "icon"?: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "size"?: 'sm' | 'lg';
     }
     interface LiciousInput {
         "disabled"?: boolean;
@@ -151,8 +153,8 @@ declare namespace LocalJSX {
     }
     interface LiciousToolbarButton {
         "disabled"?: boolean;
-        "icon"?: "paint" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
-        "size"?: "xs" | "sm" | "lg";
+        "icon"?: 'paint' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "size"?: 'xs' | 'sm' | 'md' | 'lg';
     }
     interface IntrinsicElements {
         "licious-button": LiciousButton;
