@@ -23,6 +23,7 @@ export namespace Components {
     interface LiciousInput {
         "disabled": boolean;
         "placeholder": string;
+        "value": string;
     }
     interface LiciousMenuButton {
         "disabled": boolean;
@@ -136,6 +137,7 @@ declare namespace LocalJSX {
     interface LiciousInput {
         "disabled"?: boolean;
         "placeholder"?: string;
+        "value"?: string;
     }
     interface LiciousMenuButton {
         "disabled"?: boolean;

@@ -11,6 +11,7 @@
 | ------------- | ------------- | ----------- | --------- | ----------- |
 | `disabled`    | `disabled`    |             | `boolean` | `undefined` |
 | `placeholder` | `placeholder` |             | `string`  | `undefined` |
+| `value`       | `value`       |             | `string`  | `''`        |
 
 
 ----------------------------------------------
