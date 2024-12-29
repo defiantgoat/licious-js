@@ -25,6 +25,7 @@ export namespace Components {
     }
     interface LiciousMenuButton {
         "disabled": boolean;
+        "opened": boolean;
     }
     interface LiciousPanel {
         "header": string;
@@ -136,6 +137,7 @@ declare namespace LocalJSX {
     }
     interface LiciousMenuButton {
         "disabled"?: boolean;
+        "opened"?: boolean;
     }
     interface LiciousPanel {
         "header"?: string;
