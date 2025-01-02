@@ -36,7 +36,7 @@ export namespace Components {
     }
     interface LiciousSelect {
         "disabled": boolean;
-        "options": { value: string | number, label: string }[];
+        "options": { value: string | number; label: string; selected?: boolean }[];
     }
     interface LiciousToolbarButton {
         "disabled": boolean;
@@ -151,7 +151,7 @@ declare namespace LocalJSX {
     }
     interface LiciousSelect {
         "disabled"?: boolean;
-        "options"?: { value: string | number, label: string }[];
+        "options"?: { value: string | number; label: string; selected?: boolean }[];
     }
     interface LiciousToolbarButton {
         "disabled"?: boolean;

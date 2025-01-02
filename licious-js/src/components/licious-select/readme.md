@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                                            | Default     |
-| ---------- | ---------- | ----------- | ----------------------------------------------- | ----------- |
-| `disabled` | `disabled` |             | `boolean`                                       | `undefined` |
-| `options`  | --         |             | `{ value: string \| number; label: string; }[]` | `[]`        |
+| Property   | Attribute  | Description | Type                                                                | Default     |
+| ---------- | ---------- | ----------- | ------------------------------------------------------------------- | ----------- |
+| `disabled` | `disabled` |             | `boolean`                                                           | `undefined` |
+| `options`  | --         |             | `{ value: string \| number; label: string; selected?: boolean; }[]` | `[]`        |
 
 
 ## Shadow Parts
