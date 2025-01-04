@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                                                                                   | Default     |
-| ---------- | ---------- | ----------- | -------------------------------------------------------------------------------------- | ----------- |
-| `disabled` | `disabled` |             | `boolean`                                                                              | `undefined` |
-| `icon`     | `icon`     |             | `"close" \| "edit" \| "logout" \| "menu" \| "paint" \| "rubbish" \| "save" \| "trash"` | `undefined` |
-| `label`    | `label`    |             | `string`                                                                               | `undefined` |
-| `size`     | `size`     |             | `"lg" \| "sm"`                                                                         | `'lg'`      |
+| Property   | Attribute  | Description | Type                                                                                               | Default     |
+| ---------- | ---------- | ----------- | -------------------------------------------------------------------------------------------------- | ----------- |
+| `disabled` | `disabled` |             | `boolean`                                                                                          | `undefined` |
+| `icon`     | `icon`     |             | `"close" \| "custom" \| "edit" \| "logout" \| "menu" \| "paint" \| "rubbish" \| "save" \| "trash"` | `undefined` |
+| `label`    | `label`    |             | `string`                                                                                           | `undefined` |
+| `size`     | `size`     |             | `"lg" \| "sm"`                                                                                     | `'lg'`      |
 
 
 ## Shadow Parts

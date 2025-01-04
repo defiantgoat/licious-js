@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type                                                                                   | Default     |
-| -------- | --------- | ----------- | -------------------------------------------------------------------------------------- | ----------- |
-| `icon`   | `icon`    |             | `"close" \| "edit" \| "logout" \| "menu" \| "paint" \| "rubbish" \| "save" \| "trash"` | `undefined` |
+| Property | Attribute | Description | Type                                                                                               | Default     |
+| -------- | --------- | ----------- | -------------------------------------------------------------------------------------------------- | ----------- |
+| `icon`   | `icon`    |             | `"close" \| "custom" \| "edit" \| "logout" \| "menu" \| "paint" \| "rubbish" \| "save" \| "trash"` | `undefined` |
 
 
 ## Shadow Parts

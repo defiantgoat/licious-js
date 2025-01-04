@@ -6,7 +6,7 @@ import { Component, Host, Prop, h } from '@stencil/core';
   shadow: true,
 })
 export class LiciousButton {
-  @Prop() icon: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+  @Prop() icon: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout' | 'custom';
   @Prop() size: 'sm' | 'lg' = 'lg';
   @Prop() label: string;
   @Prop() disabled: boolean;
@@ -16,9 +16,15 @@ export class LiciousButton {
       <Host>
         {this.icon ? (
           <button part="button" exportparts="icon label" disabled={this.disabled} class={`icon ${this.size}`}>
-            <div part="icon">
-              <licious-icon icon={this.icon}></licious-icon>
-            </div>
+            {this.icon === 'custom' ? (
+              <div part="icon">
+                <slot name="custom-icon" />
+              </div>
+            ) : (
+              <div part="icon">
+                <licious-icon icon={this.icon}></licious-icon>
+              </div>
+            )}
             <div part="label">
               <span class={'label-text'}>{this.label}</span>
             </div>
