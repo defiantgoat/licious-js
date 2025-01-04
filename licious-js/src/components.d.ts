@@ -8,16 +8,16 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface LiciousButton {
         "disabled": boolean;
-        "icon": 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "icon": 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout' | 'custom';
         "label": string;
         "size": 'sm' | 'lg';
     }
     interface LiciousIcon {
-        "icon": "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
+        "icon": 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout' | 'custom';
     }
     interface LiciousIconButton {
         "disabled": boolean;
-        "icon": 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "icon": 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout' | 'custom';
         "size": 'sm' | 'lg';
     }
     interface LiciousInput {
@@ -122,16 +122,16 @@ declare global {
 declare namespace LocalJSX {
     interface LiciousButton {
         "disabled"?: boolean;
-        "icon"?: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "icon"?: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout' | 'custom';
         "label"?: string;
         "size"?: 'sm' | 'lg';
     }
     interface LiciousIcon {
-        "icon"?: "paint" | "menu" | "trash" | "save" | "rubbish" | "edit" | "close" | "logout";
+        "icon"?: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout' | 'custom';
     }
     interface LiciousIconButton {
         "disabled"?: boolean;
-        "icon"?: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout';
+        "icon"?: 'paint' | 'menu' | 'trash' | 'save' | 'rubbish' | 'edit' | 'close' | 'logout' | 'custom';
         "size"?: 'sm' | 'lg';
     }
     interface LiciousInput {
