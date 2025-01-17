@@ -8,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/rfk1lkz.css">
-    <link rel="stylesheet" href="/build/licious-js.css">
+    <!-- <link rel="stylesheet" href="/build/licious-js.css">
 
     <script type="module" src="/build/licious-js.esm.js"></script>
-    <script nomodule src="/build/licious-js.js"></script>
+    <script nomodule src="/build/licious-js.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.css">
+    <script type="module" src='https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.esm.js'></script>
+
     <style type="text/css">
       html,
       body {
@@ -63,7 +66,7 @@
         <licious-button disabled="" icon="save" label="Save" style="width: 200px;"></licious-button>
       </div>
       <div>
-        <licious-button icon="custom" size="sm" label="Signa Out" style="width: 132px;">
+        <licious-button icon="custom" size="sm" label="Sign Out" style="width: 132px;">
           <svg slot="custom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" style="height: 1rem; width:1rem;">
             <polygon fill="currentColor" points="16 30 4 30 4 4 16 4 20 0 0 0 0 34 20 34 16 30" />
             <polygon fill="currentColor" points="21.94 10 26.44 15 11 15 11 19 26.44 19 21.94 24 27.4 24 31.99 19 31.99 19 34 17 31.99 15 31.99 15 27.4 10 21.94 10" />
