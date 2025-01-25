@@ -11,7 +11,7 @@ import { LiciousToolbarButton as LiciousToolbarButtonElement, defineCustomElemen
 import { LiciousListItem as LiciousListItemElement, defineCustomElement as defineLiciousListItem, } from "@licious/web-components/dist/components/licious-list-item.js";
 import React from "react";
 export const LiciousListItem = createComponent({
-    tagName: "licious-button",
+    tagName: "licious-list-item",
     elementClass: LiciousListItemElement,
     react: React,
     events: {},

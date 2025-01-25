@@ -2,25 +2,42 @@
   display: flex;
 }
 
-div.container {
+:host div.container {
   display: flex;
   flex: 1;
   flex-direction: row;
   background-color: var(--licious-default-background);
   border-radius: 0.3125rem;
   padding: .75rem;
-  margin: 1rem;
   gap: .5rem;
   align-items: center;
 }
 
-div.container .content {
+:host div.container .content {
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.buttons > span {
+:host div.container .content h2.licious {
+  padding: 0;
+  margin: 0;
+  font-family: "rig-shaded-bold-face", sans-serif;
+  color: var(--licious-primary);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+:host div.container .content h3.licious {
+  padding: 0;
+  margin: 0;
+  font-family: "rig-shaded-medium-face", sans-serif;
+  color: var(--licious-secondary);
+  font-size: .75rem;
+  font-weight: normal;
+}
+
+:host div.container .buttons ::slotted(*){
   display: flex;
   flex-direction: row;
   gap: .5rem;

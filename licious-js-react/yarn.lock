@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@licious/web-components@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@licious/web-components/-/web-components-0.0.18.tgz#fa9bda1a9de0ae20d0e3fb7b407dcae8f46b645d"
-  integrity sha512-kUIwQk7Xk/mhW2E2NNCW+gjfchT8vlQVt4wM3lSmrNy1ouPQDVxLbWQTPGVA5OJ/DVsAb7Nt1TbH6ARJeLDw1Q==
+"@licious/web-components@^0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@licious/web-components/-/web-components-0.0.24.tgz#1ccd1e2d8d57d1bb6aa29a015fd63b4ef33edcd3"
+  integrity sha512-5AdXVI0Qc77ry0QbzEXARKL/oJzHJVRVCu8EaL1K5j83HqdGcHI3avhSDkd+C9kGEax8teKpKu4Cfrpx841ULQ==
   dependencies:
     "@stencil/core" "^4.23.0"
 
