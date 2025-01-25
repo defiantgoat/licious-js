@@ -19,7 +19,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@licious/web-components": "^0.0.17",
+    "@licious/web-components": "^0.0.18",
     "@stencil/react-output-target": "^0.8.1"
   },
   "files": [

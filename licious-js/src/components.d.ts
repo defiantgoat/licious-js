@@ -25,6 +25,13 @@ export namespace Components {
         "placeholder": string;
         "value": string;
     }
+    interface LiciousListItem {
+        "header": string;
+        "mode": 'display' | 'edit';
+        "placeholder": string;
+        "subheader": string;
+        "value": string;
+    }
     interface LiciousMenuButton {
         "disabled": boolean;
         "opened": boolean;
@@ -73,6 +80,12 @@ declare global {
         prototype: HTMLLiciousInputElement;
         new (): HTMLLiciousInputElement;
     };
+    interface HTMLLiciousListItemElement extends Components.LiciousListItem, HTMLStencilElement {
+    }
+    var HTMLLiciousListItemElement: {
+        prototype: HTMLLiciousListItemElement;
+        new (): HTMLLiciousListItemElement;
+    };
     interface HTMLLiciousMenuButtonElement extends Components.LiciousMenuButton, HTMLStencilElement {
     }
     var HTMLLiciousMenuButtonElement: {
@@ -113,6 +126,7 @@ declare global {
         "licious-icon": HTMLLiciousIconElement;
         "licious-icon-button": HTMLLiciousIconButtonElement;
         "licious-input": HTMLLiciousInputElement;
+        "licious-list-item": HTMLLiciousListItemElement;
         "licious-menu-button": HTMLLiciousMenuButtonElement;
         "licious-panel": HTMLLiciousPanelElement;
         "licious-select": HTMLLiciousSelectElement;
@@ -139,6 +153,13 @@ declare namespace LocalJSX {
         "placeholder"?: string;
         "value"?: string;
     }
+    interface LiciousListItem {
+        "header"?: string;
+        "mode"?: 'display' | 'edit';
+        "placeholder"?: string;
+        "subheader"?: string;
+        "value"?: string;
+    }
     interface LiciousMenuButton {
         "disabled"?: boolean;
         "opened"?: boolean;
@@ -163,6 +184,7 @@ declare namespace LocalJSX {
         "licious-icon": LiciousIcon;
         "licious-icon-button": LiciousIconButton;
         "licious-input": LiciousInput;
+        "licious-list-item": LiciousListItem;
         "licious-menu-button": LiciousMenuButton;
         "licious-panel": LiciousPanel;
         "licious-select": LiciousSelect;
@@ -177,6 +199,7 @@ declare module "@stencil/core" {
             "licious-icon": LocalJSX.LiciousIcon & JSXBase.HTMLAttributes<HTMLLiciousIconElement>;
             "licious-icon-button": LocalJSX.LiciousIconButton & JSXBase.HTMLAttributes<HTMLLiciousIconButtonElement>;
             "licious-input": LocalJSX.LiciousInput & JSXBase.HTMLAttributes<HTMLLiciousInputElement>;
+            "licious-list-item": LocalJSX.LiciousListItem & JSXBase.HTMLAttributes<HTMLLiciousListItemElement>;
             "licious-menu-button": LocalJSX.LiciousMenuButton & JSXBase.HTMLAttributes<HTMLLiciousMenuButtonElement>;
             "licious-panel": LocalJSX.LiciousPanel & JSXBase.HTMLAttributes<HTMLLiciousPanelElement>;
             "licious-select": LocalJSX.LiciousSelect & JSXBase.HTMLAttributes<HTMLLiciousSelectElement>;
