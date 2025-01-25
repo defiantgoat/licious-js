@@ -9,13 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.typekit.net/rfk1lkz.css" />
-  <link rel="stylesheet" href="/build/licious-js.css" />
+  <!-- <link rel="stylesheet" href="/build/licious-js.css" />
 
   <script type="module" src="/build/licious-js.esm.js"></script>
-  <script nomodule src="/build/licious-js.js"></script>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.css">
+  <script nomodule src="/build/licious-js.js"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.css" />
   <script type="module"
-    src='https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.esm.js'></script> -->
+    src="https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.esm.js"></script>
 
   <style type="text/css">
     html,
@@ -64,7 +64,6 @@
       <div slot="edit-mode-buttons">
         <licious-icon-button icon="trash" style="width: 2.75rem; height: 2.75rem"></licious-icon-button>
         <licious-icon-button icon="save" style="width: 2.75rem; height: 2.75rem"></licious-icon-button>
-
       </div>
     </licious-list-item>
   </div>
@@ -198,7 +197,7 @@
       console.log(event);
     });
 
-    document.getElementById('testListItem')?.addEventListener('inputChanged', (e) => console.log(e))
+    document.getElementById('testListItem')?.addEventListener('inputChanged', e => console.log(e));
   </script>
 </body>
 
