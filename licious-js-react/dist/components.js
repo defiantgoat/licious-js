@@ -8,7 +8,15 @@ import { LiciousMenuButton as LiciousMenuButtonElement, defineCustomElement as d
 import { LiciousPanel as LiciousPanelElement, defineCustomElement as defineLiciousPanel, } from "@licious/web-components/dist/components/licious-panel.js";
 import { LiciousSelect as LiciousSelectElement, defineCustomElement as defineLiciousSelect, } from "@licious/web-components/dist/components/licious-select.js";
 import { LiciousToolbarButton as LiciousToolbarButtonElement, defineCustomElement as defineLiciousToolbarButton, } from "@licious/web-components/dist/components/licious-toolbar-button.js";
+import { LiciousListItem as LiciousListItemElement, defineCustomElement as defineLiciousListItem, } from "@licious/web-components/dist/components/licious-list-item.js";
 import React from "react";
+export const LiciousListItem = createComponent({
+    tagName: "licious-button",
+    elementClass: LiciousListItemElement,
+    react: React,
+    events: {},
+    defineCustomElement: defineLiciousListItem,
+});
 export const LiciousButton = createComponent({
     tagName: "licious-button",
     elementClass: LiciousButtonElement,

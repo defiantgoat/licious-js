@@ -7,6 +7,9 @@ import { LiciousMenuButton as LiciousMenuButtonElement } from "@licious/web-comp
 import { LiciousPanel as LiciousPanelElement } from "@licious/web-components/dist/components/licious-panel.js";
 import { LiciousSelect as LiciousSelectElement } from "@licious/web-components/dist/components/licious-select.js";
 import { LiciousToolbarButton as LiciousToolbarButtonElement } from "@licious/web-components/dist/components/licious-toolbar-button.js";
+import { LiciousListItem as LiciousListItemElement } from "@licious/web-components/dist/components/licious-list-item.js";
+type LiciousListItemEvents = NonNullable<unknown>;
+export declare const LiciousListItem: StencilReactComponent<LiciousListItemElement, LiciousListItemEvents>;
 type LiciousButtonEvents = NonNullable<unknown>;
 export declare const LiciousButton: StencilReactComponent<LiciousButtonElement, LiciousButtonEvents>;
 type LiciousIconEvents = NonNullable<unknown>;
