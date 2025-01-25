@@ -1,9 +1,9 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'licious-list-item',
   styleUrl: 'licious-list-item.css',
-  shadow: false,
+  shadow: true,
 })
 export class LiciousListItem {
   @Prop() placeholder: string;
@@ -11,6 +11,16 @@ export class LiciousListItem {
   @Prop() mode: 'display' | 'edit' = 'display';
   @Prop() header: string = '';
   @Prop() subheader: string = '';
+
+  @Event() inputChanged: EventEmitter<string>;
+
+  inputChangedHandler(evt: string) {
+    this.inputChanged.emit(evt);
+  }
+
+  handleInputChanged(e: any) {
+    this.inputChangedHandler(e?.target?.shadowRoot?.querySelector('input')?.value || '');
+  }
 
   render() {
     return (
@@ -21,19 +31,19 @@ export class LiciousListItem {
               <h2 class="licious">{this.header}</h2>
               {this.subheader > '' ? <h3 class="licious">{this.subheader}</h3> : null}
             </div>
-            <span class="buttons">
+            <div class="buttons">
               <slot name="display-mode-buttons"></slot>
-            </span>
+            </div>
           </div>
         ) : null}
         {this.mode === 'edit' ? (
           <div class="container">
             <div class="content">
-              <licious-input value={this.value} placeholder={this.placeholder} />
+              <licious-input value={this.value} placeholder={this.placeholder} onInput={e => this.handleInputChanged(e)} />
             </div>
-            <span class="buttons">
+            <div class="buttons">
               <slot name="edit-mode-buttons"></slot>
-            </span>
+            </div>
           </div>
         ) : null}
       </Host>

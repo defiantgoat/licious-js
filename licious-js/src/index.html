@@ -13,9 +13,9 @@
 
   <script type="module" src="/build/licious-js.esm.js"></script>
   <script nomodule src="/build/licious-js.js"></script> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.css" />
   <script type="module"
-    src='https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.esm.js'></script>
+    src="https://cdn.jsdelivr.net/npm/@licious/web-components/dist/licious-js/licious-js.esm.js"></script>
 
   <style type="text/css">
     html,
@@ -60,13 +60,12 @@
       <span slot="display-mode-buttons">
         <licious-icon-button icon="edit" style="width: 2.75rem; height: 2.75rem"></licious-icon-button>
       </span></licious-list-item>
-    <licious-list-item value="Title" subheader="By Jayson" mode="edit">
-      <span slot="edit-mode-buttons">
+    <licious-list-item value="Title" subheader="By Jayson" mode="edit" id="testListItem">
+      <div slot="edit-mode-buttons">
         <licious-icon-button icon="trash" style="width: 2.75rem; height: 2.75rem"></licious-icon-button>
         <licious-icon-button icon="save" style="width: 2.75rem; height: 2.75rem"></licious-icon-button>
-        <licious-icon-button icon="close" style="width: 2.75rem; height: 2.75rem"></licious-icon-button>
-
-      </span></licious-list-item>
+      </div>
+    </licious-list-item>
   </div>
   <div style="display: flex; flex-direction: column; gap: 2rem; padding: 3rem">
     <div>
@@ -197,6 +196,8 @@
     document.getElementById('largePanel')?.addEventListener('panelClosed', event => {
       console.log(event);
     });
+
+    document.getElementById('testListItem')?.addEventListener('inputChanged', e => console.log(e));
   </script>
 </body>
 

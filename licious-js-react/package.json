@@ -1,6 +1,6 @@
 {
   "name": "@licious/react",
-  "version": "0.0.18",
+  "version": "0.0.24",
   "description": "Licious Web Component React Wrapper",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -19,7 +19,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@licious/web-components": "^0.0.18",
+    "@licious/web-components": "^0.0.24",
     "@stencil/react-output-target": "^0.8.1"
   },
   "files": [
