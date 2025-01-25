@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+}
+
+div.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  background-color: var(--licious-default-background);
+  border-radius: 0.3125rem;
+  padding: .75rem;
+  margin: 1rem;
+  gap: .5rem;
+  align-items: center;
+}
+
+div.container .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.buttons > span {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}

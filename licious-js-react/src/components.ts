@@ -44,7 +44,27 @@ import {
   LiciousToolbarButton as LiciousToolbarButtonElement,
   defineCustomElement as defineLiciousToolbarButton,
 } from "@licious/web-components/dist/components/licious-toolbar-button.js";
+import {
+  LiciousListItem as LiciousListItemElement,
+  defineCustomElement as defineLiciousListItem,
+} from "@licious/web-components/dist/components/licious-list-item.js";
 import React from "react";
+
+type LiciousListItemEvents = NonNullable<unknown>;
+export const LiciousListItem: StencilReactComponent<
+  LiciousListItemElement,
+  LiciousListItemEvents
+> = /*@__PURE__*/ createComponent<
+  LiciousListItemElement,
+  LiciousListItemEvents
+>({
+  tagName: "licious-button",
+  elementClass: LiciousListItemElement,
+  // @ts-ignore - React type of Stencil Output Target may differ from the React version used in the Nuxt.js project, this can be ignored.
+  react: React,
+  events: {} as LiciousListItemEvents,
+  defineCustomElement: defineLiciousListItem,
+});
 
 type LiciousButtonEvents = NonNullable<unknown>;
 

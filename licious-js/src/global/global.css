@@ -20,6 +20,25 @@
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
+h2.licious {
+  padding: 0;
+  margin: 0;
+  font-family: "rig-shaded-bold-face", sans-serif;
+  color: var(--licious-primary);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h3.licious {
+  padding: 0;
+  margin: 0;
+  font-family: "rig-shaded-medium-face", sans-serif;
+  color: var(--licious-secondary);
+  font-size: .75rem;
+  font-weight: normal;
+}
+
+
 licious-icon {
   display: flex;
   align-content: center;
@@ -44,3 +63,17 @@ licious-panel h1 {
   font-size: 1.5rem;
   color: var(--licious-primary);
 }
+
+/* licious-list-item h2.licious {
+  padding: 0;
+  margin: 0;
+  font-family: "rig-shaded-bold-face", sans-serif;
+  color: var(--licious-primary);
+} */
+
+/* licious-list-item {
+  padding: 0;
+  margin: 0;
+  font-family: "rig-shaded-bold-face", sans-serif;
+  color: var(--licious-primary);
+} */
